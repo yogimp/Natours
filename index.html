@@ -15,7 +15,6 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
-
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -63,13 +62,12 @@
                     <div class="col-1-of-2">
                         <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
                         <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui.
+                            While larger cities may boast impressive skylines, there is nothing quite as beautiful as nature. It is hard not to be awestruck in the presence of an alpine meadow in full bloom, a golden seaside landscape at sunrise, or a sprawling red rock canyon.
                         </p>
 
                         <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
                         <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum nam.
+                            Most nature vacations involve some level of fitness. If you're on a multi-day trek, your vacation is also your exercise. A holiday spent at the cabin could involve kayaking on a nearby freshwater lake or putting in some miles on your mountain bike.
                         </p>
 
                         <a href="#" class="btn-text">Learn more &rarr;</a>
@@ -95,19 +93,25 @@
                                  class="composition__photo composition__photo--p3"
                                  src="img/nat-3-large.jpg">
 
+                            <!--
+                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            -->
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section-features">  
+            <section class="section-features">
+                
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-world"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
                             <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                                While including physical activity in your vacation can be difficult at times, what better way to stay in shape than while exploring the world and enjoying nature
                             </p>
                         </div>
                     </div>
@@ -117,7 +121,7 @@
                             <i class="feature-box__icon icon-basic-compass"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
                             <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                                Nature vacations are typically cheaper because you will likely cook your own meals, whether over a fire or in the kitchen of a cabin or beach house.
                             </p>
                         </div>
                     </div>
@@ -127,7 +131,7 @@
                             <i class="feature-box__icon icon-basic-map"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
                              <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                                All of those distractions disappear. You find yourself brought into the present moment and able to pay attention to the sights and scents in front of you.
                             </p>
                         </div>
                     </div>
@@ -137,7 +141,7 @@
                             <i class="feature-box__icon icon-basic-heart"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
                             <p class="feature-box__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                                The benefits of nature travel don't stop at improving your fitness. Research has shown that even for just a short period, can improve your mood and reduce stress.
                             </p>
                         </div>
                     </div>
@@ -279,9 +283,7 @@
                         <div class="story__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                                I have travelled with ROW numerous times, including four trips on the Rogue River. Every trip has been wonderful and every person associated with ROW has been nice, knowledgeable, professional and fun. The Rogue is a great river and the trip is an excellent one for two people or a large group—and I have done both.
                             </p>
                         </div>
                     </div>
@@ -296,9 +298,7 @@
                         <div class="story__text">
                             <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur
-                                ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                                repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                                We saw mother and baby whales close up (stroking distance twice), breaching, spy-hopping, courting and also dolphins and bird watching in mangroves. The guides could not have done more to make this a most memorable holiday. Great educators. Thank you!
                             </p>
                         </div>
                     </div>
@@ -360,12 +360,20 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                            media="(max-width: 37.5em)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                </picture>
+
+
+                
             </div>
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">
-                        <ul class="footer_list">
+                        <ul class="footer__list">
                             <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
@@ -376,10 +384,8 @@
                 </div>
                 <div class="col-1-of-2">
                     <p class="footer__copyright">
-                        Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
-                        Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal
-                        and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
-                        Schmedtmann, is of course highly appreciated!
+                        Travel Stride by <a href="#" class="footer__link">Natours</a> Connecting people to culture, wildlife. Copyright <a href="#" class="footer__link">Natour Travels</a>.
+                        See the Full list of Covid-19 travel resources - all updated regularly given the fast changing environment.
                     </p>
                 </div>
             </div>
@@ -396,15 +402,8 @@
                     <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
                     <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
                     <p class="popup__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
-                        amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
-                        sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget
-                        gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque laoreet.
-                        Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus
-                        vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa
-                        vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
-                        euismod nisi porta.
+                        We need a minimum of 5 guests to confirm a departure. Please inquire if we have any bookings you may be able to join to reach the minimum number of required guests.
+                        Your trip is enriched by knowledgeable guides who share the canyon's cultural and natural history. No other company trains guides like we do, and most of our guides are also Certified Interpretive Guides through the National Association for Interpretation.
                     </p>
                     <a href="#" class="btn btn--green">Book now</a>
                 </div>
